@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="BlendTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlendTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:lottie="using:Microsoft.Toolkit.Uwp.UI.Lottie"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <muxc:NavigationView >
+            <muxc:AnimatedVisualPlayer x:Name="LottiePlayer" AutoPlay="True">
+                <lottie:LottieVisualSource x:Name="LottieJsonSource" UriSource="ms-appx:///super-hero-charging.json"/>
+            </muxc:AnimatedVisualPlayer>
+        </muxc:NavigationView>
+    </Grid>
+</Page>
