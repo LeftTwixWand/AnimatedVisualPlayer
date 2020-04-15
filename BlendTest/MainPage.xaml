@@ -136,7 +136,7 @@
                                         <VisualState.Setters>
                                             <Setter Target="PaneContentGrid.Width" Value="{Binding CompactPaneLength, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
                                             <Setter Target="SettingsNavPaneItem.HorizontalAlignment" Value="Left"/>
-                                            <!--<Setter Target="PaneTitleTextBlock.Visibility" Value="Collapsed"/>-->
+                                            <Setter Target="PaneTitleTextBlock.Visibility" Value="Collapsed"/>
                                             <Setter Target="PaneHeaderContentBorder.Visibility" Value="Collapsed"/>
                                             <Setter Target="PaneCustomContentBorder.HorizontalAlignment" Value="Left"/>
                                             <Setter Target="FooterContentBorder.HorizontalAlignment" Value="Left"/>
@@ -194,11 +194,11 @@
                                             <ToolTip x:Name="NavigationViewCloseButtonToolTip"/>
                                         </ToolTipService.ToolTip>
                                     </Button>
-                                    <Button x:Name="TogglePaneButton" AutomationProperties.LandmarkType="Navigation" Width="40" Height="40" Background="Transparent" VerticalAlignment="Top" Visibility="{Binding TemplateSettings.PaneToggleButtonVisibility, RelativeSource={RelativeSource Mode=TemplatedParent}}">
-                                        <muxc:AnimatedVisualPlayer x:Name="NVLottiePlayer" AutoPlay="True" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <muxc:AnimatedVisualPlayer x:Name="NVLottiePlayer" AutoPlay="True" Width="40" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom">
                                         <lottie:LottieVisualSource x:Name="NVLottieJsonSource" UriSource="ms-appx:///super-hero-charging.json"/>
                                     </muxc:AnimatedVisualPlayer>
-                                        <!--<TextBlock x:Name="PaneTitleTextBlock" Grid.Column="0" HorizontalAlignment="Left" Style="{StaticResource NavigationViewItemHeaderTextStyle}" Text="{TemplateBinding PaneTitle}" VerticalAlignment="Center"/>-->
+                                    <Button x:Name="TogglePaneButton" AutomationProperties.LandmarkType="Navigation" Width="40" Height="40" Background="Transparent" VerticalAlignment="Top" Visibility="{Binding TemplateSettings.PaneToggleButtonVisibility, RelativeSource={RelativeSource Mode=TemplatedParent}}">
+                                        <TextBlock x:Name="PaneTitleTextBlock" Grid.Column="0" HorizontalAlignment="Left" Style="{StaticResource NavigationViewItemHeaderTextStyle}" Text="{TemplateBinding PaneTitle}" VerticalAlignment="Center"/>
                                     </Button>
                                     <Grid x:Name="PaneTitleHolder" Visibility="Collapsed">
                                         <ContentControl x:Name="PaneTitlePresenter" HorizontalContentAlignment="Stretch" IsTabStop="False" Margin="{ThemeResource NavigationViewPaneTitlePresenterMargin}" VerticalContentAlignment="Stretch"/>
