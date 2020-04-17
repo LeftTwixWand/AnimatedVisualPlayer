@@ -195,7 +195,7 @@
                                         </ToolTipService.ToolTip>
                                     </Button>
                                         <muxc:AnimatedVisualPlayer x:Name="NVLottiePlayer" AutoPlay="True" Width="40" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-                                        <lottie:LottieVisualSource x:Name="NVLottieJsonSource" UriSource="ms-appx:///super-hero-charging.json"/>
+                                        <lottie:LottieVisualSource x:Name="NVLottieJsonSource" UriSource="ms-appx:///menu-V2.json"/>
                                     </muxc:AnimatedVisualPlayer>
                                     <Button x:Name="TogglePaneButton" AutomationProperties.LandmarkType="Navigation" Width="40" Height="40" Background="Transparent" VerticalAlignment="Top" Visibility="{Binding TemplateSettings.PaneToggleButtonVisibility, RelativeSource={RelativeSource Mode=TemplatedParent}}">
                                         <TextBlock x:Name="PaneTitleTextBlock" Grid.Column="0" HorizontalAlignment="Left" Style="{StaticResource NavigationViewItemHeaderTextStyle}" Text="{TemplateBinding PaneTitle}" VerticalAlignment="Center"/>
