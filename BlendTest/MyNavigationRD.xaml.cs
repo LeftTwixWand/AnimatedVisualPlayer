@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.UI.Xaml.Controls;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 namespace BlendTest
 {
@@ -14,7 +16,8 @@ namespace BlendTest
 
         private void TogglePaneButton_Click(object sender, RoutedEventArgs e)
         {
-            Debug.WriteLine("text form my debug!!");
+            ((sender as Button).Content as AnimatedVisualPlayer).AutoPlay = true;
+            
         }
     }
 }
