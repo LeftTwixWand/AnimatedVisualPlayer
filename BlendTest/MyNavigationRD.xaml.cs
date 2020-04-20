@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
 
 namespace BlendTest
 {
@@ -16,8 +17,14 @@ namespace BlendTest
 
         private void TogglePaneButton_Click(object sender, RoutedEventArgs e)
         {
-            ((sender as Button).Content as AnimatedVisualPlayer).AutoPlay = true;
+            var window = (Style)Application.Current.Resources["MyNavigationViewStyle"];
+            //var template = (ControlTemplate)window.Setters[3].GetValue(); // "MyNavigationViewControlTemplate"
+            //var a = this.Resources[""]; // MyNavigationViewControlTemplate.GetValue(ContentProperty);
+            //MyNavigationViewControlTemplate.GetValue(ContentControl)
+            //MyNavigationViewControlTemplate.
+            //MyNavigationViewControlTemplate
             
+            Debug.WriteLine("Work!");
         }
     }
 }
