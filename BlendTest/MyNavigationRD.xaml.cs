@@ -40,12 +40,12 @@ namespace BlendTest
                 if (IsPlayed)
                 {
                     //player.SetProgress(0);
-                    player.PlaybackRate = -1;
-                    await player.PlayAsync(0, 1, false);
+                    player.PlaybackRate = -2.5;
+                    await player.PlayAsync(0, 0.97, false);
                 }
                 else
                 {
-                    player.PlaybackRate = 1;
+                    player.PlaybackRate = 1.75;
                     await player.PlayAsync(0, 1, false);
                 }
                 IsPlayed = !IsPlayed;
@@ -55,12 +55,12 @@ namespace BlendTest
                 if (IsPlayed)
                 {
                     //player.SetProgress(0);
-                    player.PlaybackRate = -1;
-                    await player.PlayAsync(0,1, false);
+                    player.PlaybackRate = -2.5;
+                    await player.PlayAsync(0, 0.97, false);
                 }
                 else
                 {
-                    player.PlaybackRate = 1;
+                    player.PlaybackRate = 1.75;
                     await player.PlayAsync(0, 1, false);
                 }
                 IsPlayed = !IsPlayed;
