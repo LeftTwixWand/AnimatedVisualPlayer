@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Blend for Visual Studio Version 16
+# Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendTest", "BlendTest\BlendTest.csproj", "{76897DE8-CBB3-4ACB-BFED-7B9573DAFDAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedVisualPlayerUWP", "AnimatedVisualPlayerUWP\AnimatedVisualPlayerUWP.csproj", "{76897DE8-CBB3-4ACB-BFED-7B9573DAFDAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

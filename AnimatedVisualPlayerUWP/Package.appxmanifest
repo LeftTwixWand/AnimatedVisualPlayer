@@ -14,7 +14,7 @@
   <mp:PhoneIdentity PhoneProductId="7a4c0810-1396-4491-aca8-00172fbb7afd" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>BlendTest</DisplayName>
+    <DisplayName>AnimatedVisualPlayer</DisplayName>
     <PublisherDisplayName>vladislav.horbachov</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="BlendTest.App">
+      EntryPoint="AnimatedVisualPlayerUWP.App">
       <uap:VisualElements
-        DisplayName="BlendTest"
+        DisplayName="AnimatedVisualPlayer"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="BlendTest"
+        Description="Try getting started with lottie animations in UWP."
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

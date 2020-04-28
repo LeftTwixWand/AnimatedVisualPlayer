@@ -9,7 +9,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-namespace BlendTest
+namespace AnimatedVisualPlayerUWP
 {
     public partial class MyNavigationRD : ResourceDictionary
     {
@@ -40,12 +40,12 @@ namespace BlendTest
                 if (IsPlayed)
                 {
                     //player.SetProgress(0);
-                    player.PlaybackRate = -1;
-                    await player.PlayAsync(0, 1, false);
+                    player.PlaybackRate = -3;
+                    await player.PlayAsync(0, 0.93, false);
                 }
                 else
                 {
-                    player.PlaybackRate = 1;
+                    player.PlaybackRate = 2;
                     await player.PlayAsync(0, 1, false);
                 }
                 IsPlayed = !IsPlayed;
@@ -55,12 +55,12 @@ namespace BlendTest
                 if (IsPlayed)
                 {
                     //player.SetProgress(0);
-                    player.PlaybackRate = -1;
-                    await player.PlayAsync(0,1, false);
+                    player.PlaybackRate = -3;
+                    await player.PlayAsync(0, 0.93, false);
                 }
                 else
                 {
-                    player.PlaybackRate = 1;
+                    player.PlaybackRate = 2;
                     await player.PlayAsync(0, 1, false);
                 }
                 IsPlayed = !IsPlayed;
