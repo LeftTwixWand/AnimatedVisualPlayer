@@ -40,12 +40,12 @@ namespace AnimatedVisualPlayerUWP
                 if (IsPlayed)
                 {
                     //player.SetProgress(0);
-                    player.PlaybackRate = -3;
-                    await player.PlayAsync(0, 0.93, false);
+                    player.PlaybackRate = -2.5;
+                    await player.PlayAsync(0, 0.97, false);
                 }
                 else
                 {
-                    player.PlaybackRate = 2;
+                    player.PlaybackRate = 1.75;
                     await player.PlayAsync(0, 1, false);
                 }
                 IsPlayed = !IsPlayed;
@@ -55,12 +55,12 @@ namespace AnimatedVisualPlayerUWP
                 if (IsPlayed)
                 {
                     //player.SetProgress(0);
-                    player.PlaybackRate = -3;
-                    await player.PlayAsync(0, 0.93, false);
+                    player.PlaybackRate = -2.5;
+                    await player.PlayAsync(0, 0.97, false);
                 }
                 else
                 {
-                    player.PlaybackRate = 2;
+                    player.PlaybackRate = 1.75;
                     await player.PlayAsync(0, 1, false);
                 }
                 IsPlayed = !IsPlayed;
