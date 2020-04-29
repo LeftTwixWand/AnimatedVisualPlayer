@@ -9,6 +9,6 @@
     mc:Ignorable="d" 
     Background="{ThemeResource SystemColorButtonFaceColor}">
 
-    <muxc:NavigationView Style="{StaticResource MyNavigationViewStyle}" />
+    <muxc:NavigationView Style="{StaticResource MyNavigationViewStyle}" IsBackButtonVisible="Collapsed"/>
 
 </Page>

@@ -13,12 +13,13 @@ namespace AnimatedVisualPlayerUWP
 {
     public partial class MyNavigationRD : ResourceDictionary
     {
-        private bool IsPlayed = false;
+        private bool IsPlayed = false, toggled = false;
         AnimatedVisualPlayer player = null;
         public MyNavigationRD() => InitializeComponent();
 
         private async void TogglePaneButton_Click(object sender, RoutedEventArgs e)
         {
+            toggled = !toggled;
             //var window = (Style)Application.Current.Resources["MyNavigationViewStyle"];
             //var template = (ControlTemplate)window.Setters[3].GetValue(); // "MyNavigationViewControlTemplate"
             //var a = this.Resources[""]; // MyNavigationViewControlTemplate.GetValue(ContentProperty);
@@ -37,36 +38,34 @@ namespace AnimatedVisualPlayerUWP
                 Grid grid = (Grid)button.Parent;
                 player = grid.Children[2] as AnimatedVisualPlayer;
 
-                if (IsPlayed)
-                {
-                    //player.SetProgress(0);
-                    player.PlaybackRate = -2.5;
-                    await player.PlayAsync(0, 0.97, false);
-                }
-                else
-                {
-                    player.PlaybackRate = 1.75;
-                    await player.PlayAsync(0, 1, false);
-                }
+                player.PlaybackRate = 1.75;
+                await player.PlayAsync(0, 1, false);
                 IsPlayed = !IsPlayed;
             }
             else
             {
-                if (IsPlayed)
+                if (player.IsPlaying)
                 {
-                    //player.SetProgress(0);
-                    player.PlaybackRate = -2.5;
-                    await player.PlayAsync(0, 0.97, false);
+                    Debug.WriteLine("Playing");
+                    return;
                 }
                 else
                 {
-                    player.PlaybackRate = 1.75;
-                    await player.PlayAsync(0, 1, false);
-                }
-                IsPlayed = !IsPlayed;
-            }
 
-            Debug.WriteLine("Work!");
+                    if (IsPlayed)
+                    {
+                        //player.SetProgress(0);
+                        player.PlaybackRate = -2.5;
+                        await player.PlayAsync(0, 0.8, false);
+                    }
+                    else
+                    {
+                        player.PlaybackRate = 1.75;
+                        await player.PlayAsync(0, 1, false);
+                    }
+                    IsPlayed = !IsPlayed;
+                }
+            }
         }
     }
 }
